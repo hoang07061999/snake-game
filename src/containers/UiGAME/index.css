@@ -1,0 +1,61 @@
+.canvas {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  max-width: 400px;
+  grid-gap: 3px;
+  padding: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.item {
+  width: 35px;
+  height: 35px;
+  background-color: #5f9ea0;
+  border-radius: 5px;
+}
+
+.item-isFood {
+  width: 35px;
+  height: 35px;
+  background-color: #121414;
+  border-radius: 5px;
+}
+
+.item-isHead {
+  width: 35px;
+  height: 35px;
+  background-color: #c22526;
+  border-radius: 5px;
+}
+
+.item-isTail {
+  width: 35px;
+  height: 35px;
+  background-color: #d2691e;
+  border-radius: 5px;
+}
+
+.content {
+  position: relative;
+}
+.overlay {
+  opacity: 0.5;
+  background-color: gray;
+}
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.start-again{
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
